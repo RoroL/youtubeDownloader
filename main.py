@@ -1,6 +1,7 @@
 import argparse
 import re
 import os
+import time
 
 def Redbold(output):
     os.system("tput bold")
@@ -12,6 +13,8 @@ def Bold(output):
     os.system("tput bold")
     print(output)
     os.system("tput sgr 0")
+
+start = time.time()
 
 parser = argparse.ArgumentParser()
 parser.add_argument("url", help="Youtube's playlist's url")
@@ -29,3 +32,9 @@ for line in re.findall("<ol class=\"playlist-videos-list .*</ol>", sourceCode.re
         os.system("youtube-dl -i -x -o \"%(title)s.%(ext)s\" http://www.youtube.com" + link)
 
 os.system("rm .sourceCode")
+
+end = time.time()
+time = end-start
+
+Bold("\n... Infos ...")
+Bold("- Processing time : " + str(time))
