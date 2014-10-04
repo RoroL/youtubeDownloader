@@ -8,17 +8,17 @@ Utilisation de:
 
 ---
 
-####**Arguments**
+####Arguments
 
-- -u / --url		Url de la playlist
-- -f / --file		Chemin du fichier contenant la list d'url
+- -u / --url	->	Url de la playlist
+- -f / --file	->	Chemin du fichier contenant la liste d'url
 
 ---
 
-####**Exemples d'utilisation**
+####Exemples d'utilisation
 
-	python3 main.py -u http://www.yoytube.com/...
+	python3 main.py -u http://www.youtube.com/...
 Extraction audio au format .m4a à partir de l'url d'une playlist
 
 	python3 main.py -f ./listingUrl
-Extraction audio au format .m4a à partir d'un fichier contenant une list d'url
+Extraction audio au format .m4a à partir d'un fichier contenant une liste d'url
