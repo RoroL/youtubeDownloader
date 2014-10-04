@@ -23,7 +23,6 @@ parser.add_argument("-f", "--file", help="Url listing file")
 args = parser.parse_args()
 
 if args.url:
-    
     Redbold("\nDownloading source code from url...")
     os.system("wget -o .wgetstdout \"" + args.url + "\" -O .sourceCode")
     os.system("rm .wgetstdout")
