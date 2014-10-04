@@ -1,4 +1,4 @@
-####**Playlist Youtube Downloader - Version 1.0**
+###**Playlist Youtube Downloader - Version 1.0**
 
 Utilisation de:
 - [youtube-dl](http://rg3.github.io/youtube-dl/)
@@ -8,14 +8,14 @@ Utilisation de:
 
 ---
 
-####Arguments
+#####Arguments
 
 - -u / --url	->	Url de la playlist
 - -f / --file	->	Chemin du fichier contenant la liste d'url
 
 ---
 
-####Exemples d'utilisation
+#####Exemples d'utilisation
 
 	python3 main.py -u http://www.youtube.com/...
 Extraction audio au format .m4a à partir de l'url d'une playlist
