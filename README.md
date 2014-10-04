@@ -6,4 +6,18 @@ Utilisation de:
 - [os](http://docs.python.org/3/library/os.html)
 - [time](http://docs.python.org/3/library/time.html)
 
-Extraction audio au format .m4a d'une playlist youtube par url
+---
+
+####**Arguments**
+
+- -u / --url	Url de la playlist
+- -f / --file	Chemin du fichier contenant la list d'url
+
+---
+
+####**Exemples d'utilisation**
+
+	python3 main.py -u http://www.yoytube.com/...
+Extraction audio au format .m4a à partir de l'url d'une playlist
+	python3 main.py -f ./listingUrl
+Extraction audio au format .m4a à partir d'un fichier contenant une list d'url
